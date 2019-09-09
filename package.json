@@ -1,0 +1,38 @@
+{
+  "name": "html2pdf",
+  "version": "1.0.0-beta",
+  "description": "Convert HTML dom to PDF",
+  "scripts": {
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production",
+    "build": "npm run build-dev && npm run build-prod",
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbrtrnd/html2pdf.git"
+  },
+  "author": "Jules Bertrand <contact@julesbertrand.dev>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbrtrnd/html2pdf/issues"
+  },
+  "homepage": "https://github.com/jbrtrnd/html2pdf#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "html2canvas": "^1.0.0-rc.3",
+    "jspdf": "^1.5.3"
+  }
+}

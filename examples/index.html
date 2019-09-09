@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+        <meta charset="UTF-8">
+
+        <script type="text/javascript" src="http://localhost:8080/html2pdf.js"></script>
+
+        <script type="text/javascript">
+            console.log(html2pdf);
+
+            function exportExample(button) {
+                const container = button.closest('.example-container');
+                const exportable = container.querySelector('.exportable');
+
+                const exporter = new html2pdf.Html2Pdf(exportable);
+
+                exporter.toPDF().then(() => {
+
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <section class="example-container">
+            <div class="exportable" style="border: 1px solid red; width: 900px">
+                Hello World !
+            </div>
+            <button onclick="exportExample(this)">
+                Export
+            </button>
+        </section>
+
+        <hr />
+
+        <div class="example-images"></div>
+    </body>
+</html>
